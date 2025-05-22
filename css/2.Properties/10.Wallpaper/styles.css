@@ -1,0 +1,13 @@
+#outer {
+  width: 500px;
+  height: 500px;
+  background-color: violet;
+}
+
+#inner {
+  width: 400px;
+  height: 400px;
+  background-image: url("https://cdn.thewirecutter.com/wp-content/media/2021/03/adopting-a-cat-2048px-06052-2x1-1.jpg?width=2048&quality=75&crop=2:1&auto=webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+} 

@@ -1,0 +1,29 @@
+#invite-wrapper {
+  width: 60%;
+  padding: 25px;
+  background-color:rgb(221, 204, 255);
+  color: rgb(153, 92, 0);
+}
+
+h1 {
+  font-family: Lucida Handwriting, Cursive;
+  text-align: center;
+}
+
+#invite-text {
+  width: 85%;
+  font-family: Helvetica, Sans-serif;
+}
+
+#itinerary {
+  text-align: center;
+  color: rgb(102, 51, 0);
+  font-family: Courier New, Monospace;
+  font-weight: 500;
+}
+
+span { font-weight: 800;}
+
+.footer {
+  font-family: Lucida Handwriting, Cursive;
+}
