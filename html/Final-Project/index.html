@@ -1,0 +1,192 @@
+<!-- Write code below 💖 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Menu</title>
+  <link rel="icon" type="image/x-icon"
+    href="https://cdn3.iconfinder.com/data/icons/font-awesome-solid/512/list-check-512.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background: #e0e7ef;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      margin-bottom: 20px;
+    }
+
+    #ul-header {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+    }
+
+    #ul-header li {
+      display: inline;
+      margin-left: 20px;
+    }
+
+    #ul-header a {
+      text-decoration: none;
+      color: #2a5d9f;
+      font-weight: bold;
+    }
+
+    h1, h2, h3, .p-form {
+      text-align: center;
+    }
+
+    #menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    article {
+      width: 250px;
+      margin: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .menu-img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    form {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    form label {
+      margin-right: 5px;
+    }
+
+    form input[type="text"], form input[type="number"] {
+      border: 1px solid #bbb;
+      border-radius: 4px;
+      padding: 3px 6px;
+      width: 70px;
+    }
+
+    form button {
+      background: #2a5d9f;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 18px;
+      font-size: 1em;
+      cursor: pointer;
+      display: block;
+      margin: 20px auto 0 auto;
+    }
+
+    form button:hover {
+      background: #e67e22;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img class="header-img" alt="Restaurant Menu" title="Restaurant Menu" style="width: 200px;"
+        src="https://img.freepik.com/vettori-premium/menu-alimentare-modello-di-progettazione-del-logo-della-ricetta-alimentare-forchetta-a-cucchiaio-con-vecchia-pergamena-di-carta-vintage-vector_567423-1075.jpg?semt=ais_hybrid&w=740">
+      <h1 id="h1-header">FishNotChips</h1>
+      <ul id="ul-header">
+        <li><a href="#menu">Menù</a></li>
+        <li><a href="#order-form">Order</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Menù</h2>
+    <section id="menu">
+      <article>
+        <h3 class="h3-menu">Appetizers</h3>
+        <p class="p-menu">Start your culinary journey with our appetizers: small bites designed to awaken your appetite
+          and set the stage for your meal.</p>
+        <figure>
+          <img class="menu-img" src="./assets/appetizers.png" alt="Appetizers" title="Appetizers">
+          <figcaption><i>A small selection of classic Italian appetizers on a rustic board.</i></figcaption>
+        </figure>
+      </article>
+      <article>
+        <h3 class="h3-menu">Main Course</h3>
+        <p class="p-menu">Hearty and flavorful main dishes, made with fresh, seasonal ingredients to satisfy every
+          craving.</p>
+        <figure>
+          <img class="menu-img" src="./assets/mainCourse.png" alt="Appetizers" title="Appetizers">
+          <figcaption><i>Four Italian pasta dishes served in ceramic plates.</i></figcaption>
+        </figure>
+      </article>
+      <article>
+        <h3 class="h3-menu">Desserts</h3>
+        <p class="p-menu">End on a sweet note with our irresistible desserts: from timeless classics to refined
+          creations, each treat is a moment of indulgence.</p>
+        <figure>
+          <img class="menu-img" src="./assets/desserts.png" alt="Appetizers" title="Appetizers">
+          <figcaption><i>Chocolate cake, crème brûlée, tiramisu, and cheesecake.</i></figcaption>
+        </figure>
+      </article>
+      <article>
+        <h3 class="h3-menu">Drinks</h3>
+        <p class="p-menu">A curated selection of beverages for every occasion: cocktails, wines, craft beers, and soft
+          drinks to perfectly complement your meal.</p>
+        <figure>
+          <img class="menu-img" src="./assets/drinks.png" alt="Appetizers" title="Appetizers">
+          <figcaption><i>Aperol spritz, mojito, whiskey, and iced coffee on wood.</i></figcaption>
+        </figure>
+      </article>
+      <section id="order-form">
+        <h2>Place Your Order</h2>
+        <p class="p-form"><b><i>Please fill out the form below to \place your order.</i></b></p>
+        <br>
+        <form>
+          <input type="checkbox"><label for="appetizers">Appetizers:</label>
+          <input type="text" id="appetizers" name="appetizers" required><label> How many: </label><input type="number"
+            name="appetizers-quantity" min="0" max="10" required>
+          <br><br>
+          <input type="checkbox"><label for="main-Course">Main Course:</label>
+          <input type="text" id="main-Course" name="main-Course" required><label> How many: </label><input type="number"
+            name="main-Course-quantity" min="0" max="10" required>
+          <br><br>
+          <input type="checkbox"><label for="main-Course">Desserts:</label>
+          <input type="text" id="desserts name=" desserts" required><label> How many: </label><input type="number"
+            name="desserts-quantity" min="0" max="10" required>
+          <br><br>
+          <input type="checkbox"><label for="main-Course">Drinks:</label>
+          <input type="text" id="drinks name=" drinks" required><label> How many: </label><input type="number"
+            name="drinks-quantity" min="0" max="10" required>
+          <br><br>
+          <br><br>
+          <button type="checkout" name="checkout"
+            style="align-items: center; align-content: center; align-self: center;">Go To Checkout</button>
+        </form>
+      </section>
+  </main>
+  <footer style="text-align: center; margin-top: 50px;">
+    <a href="#menu">Back to Menu</a>
+    <p>Contact us at: <a href="mailto:info@fishnotchips.com">info@fishnotchips.com</a></p>
+    <p>© 2025 FishNotChips. All rights reserved.</p>
+    <br>
+    <p>Made with love by <a href="https://www.codedex.io/@Kritos"><b>@Kritos</b></a> 💜</p>
+  </footer>
+</body>
+</html>
